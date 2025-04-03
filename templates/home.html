@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title%}
+    Home Page
+
+{% endblock %}
+
+
+{% block content %}
+<!-- About Me Section -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <!-- Profile Picture -->
+        <div class="col-md-4 text-center">
+            <img src="{{ url_for('static', filename='images/WhatsApp Image 2025-04-03 at 14.19.27.jpeg') }}" alt="Asingo Paul" class="img-fluid rounded-circle" style="width: 200px; height: 200px;">
+
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-8 text-center">
+            <h1><marquee> Asingo Paul</marquee></h1>
+            <h3>Cloud Computing professional</h3>
+            <p>Experienced in cloud technologies, DevOps practices. Passionate about building scalable and secure cloud-based solutions.</p>
+
+            <!-- Education and Career -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <h4>Education</h4>
+                    <p>Bachelor of Science in Cloud Computing and Information Security,
+                        Machakos University</p>
+
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>Career Profession</h4>
+                    <p>Cloud Architect | Cloud Engineer | DevOps Engineer</p>
+                </div>
+                <h3> Welcome !!! </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
